@@ -11,6 +11,9 @@
 body {
   font-family: 'Roboto', sans-serif;
   color: var(--brand-color);
+  background-color: var(--white-color);
+  font-size: 14px;
+  letter-spacing: 0.03em;
 }
 ul {
   list-style-type: none;
@@ -21,13 +24,14 @@ ul {
   color: var(--brand-color);
   text-decoration: none;
 }
-
+.contact {
+  color: var(--secondary-color);
+}
 .logo {
   font-family: 'Raleway';
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
-  letter-spacing: 0.03em;
 }
 .web-logo {
   color: var(--rare-color);
@@ -39,13 +43,11 @@ ul {
 }
 .link {
   font-weight: 500;
-  font-size: 14px;
+
   line-height: 1.14;
   letter-spacing: 0.02em;
 }
-.head-nav .active {
-  color: var(--rare-color);
-}
+
 /*--Секция Герой-- */
 .hero {
   background-color: var(--bg-color);
@@ -79,30 +81,36 @@ ul {
   background-color: var(--btn-bg-hover);
 }
 /* --Преимущества-- */
-.benefits-title {
-  display: none;
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
 }
+
+/* display: none; */
+
 .detail-title {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
-  letter-spacing: 0.03em;
+
   text-transform: uppercase;
 }
 .detail-text {
   color: var(--secondary-color);
-
-  font-size: 14px;
   line-height: 1.71;
-  letter-spacing: 0.03em;
 }
 /* --Портфолио-- */
-.portfolio-title {
-  font-weight: 700;
+.section-title {
   font-size: 36px;
   line-height: 1.17;
-  letter-spacing: 0.03em;
-
   text-align: center;
 }
 
@@ -110,19 +118,11 @@ ul {
 .team {
   background-color: var(--btn-bg-secondary-color);
 }
-.team-title {
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.17;
-  letter-spacing: 0.03em;
-  text-align: center;
-}
 
 .card-title {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19px;
-  letter-spacing: 0.03em;
 }
 
 .card-text {
@@ -130,7 +130,6 @@ ul {
 
   font-size: 16px;
   line-height: 1.19;
-  letter-spacing: 0.03em;
 }
 
 /* --Футер-- */
@@ -146,22 +145,24 @@ ul {
   color: var(--white-color);
   font-style: normal;
   font-weight: 400;
-  font-size: 14px;
   line-height: 1.71;
-  letter-spacing: 0.03em;
 }
-
-.address-list .link:hover,
-.address-list .link:focus {
+.address-list .contact {
+  color: var(--secondary-color);
+}
+.contact:hover,
+.contact:focus {
   color: var(--rare-color);
 }
 /* -- Страница Потрфолио */
 
-.project-title {
-  display: none;
-}
 /* --Фильтры на Проектах-- */
+.current {
+  color: var(--rare-color);
+}
 .btn-filter {
+  padding: 6px 22px;
+  border-radius: 4px;
   background-color: var(--btn-bg-secondary-color);
   font-family: 'Roboto';
   font-weight: 500;
@@ -169,6 +170,10 @@ ul {
   line-height: 1.63;
   border: none;
   cursor: pointer;
+}
+.active {
+  color: var(--white-color);
+  background-color: var(--btn-bg-hover);
 }
 
 .btn-filter:hover,
@@ -193,5 +198,4 @@ ul {
   color: var(--secondary-color);
   font-size: 16px;
   line-height: 1.88;
-  letter-spacing: 0.03em;
 }
