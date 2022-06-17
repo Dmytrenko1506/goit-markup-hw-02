@@ -6,6 +6,8 @@
   --bg-color: #2f303a;
   --white-color: #ffffff;
   --btn-bg-hover: #188ce8;
+  --btn-bg-secondary-color: #f5f4fa;
+  --brand-background-color: #e5e5e5;
 }
 body {
   font-family: 'Roboto', sans-serif;
@@ -42,6 +44,9 @@ ul {
   line-height: 1.14;
   letter-spacing: 0.02em;
 }
+.head-nav .active {
+  color: var(--rare-color);
+}
 /*--Секция Герой-- */
 .hero {
   background-color: var(--bg-color);
@@ -69,6 +74,7 @@ ul {
   border: none;
   cursor: pointer;
 }
+
 .btn-hero:hover,
 .btn-hero:focus {
   background-color: var(--btn-bg-hover);
@@ -107,7 +113,6 @@ ul {
   font-size: 36px;
   line-height: 1.17;
   letter-spacing: 0.03em;
-
   text-align: center;
 }
 
@@ -130,9 +135,11 @@ ul {
 .footer {
   background-color: var(--bg-color);
 }
+
 .footer-logo {
   color: var(--white-color);
 }
+
 .address .link {
   color: var(--white-color);
   font-style: normal;
@@ -141,7 +148,48 @@ ul {
   line-height: 1.71;
   letter-spacing: 0.03em;
 }
+
 .address-list .link:hover,
 .address-list .link:focus {
   color: var(--rare-color);
+}
+/* -- Страница Потрфолио */
+
+.project-title {
+  display: none;
+}
+/* --Фильтры на Проектах-- */
+.btn-filter {
+  background-color: var(--btn-bg-secondary-color);
+  font-family: 'Roboto';
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.63;
+  border: none;
+  cursor: pointer;
+}
+
+.btn-filter:hover,
+.btn-filter:focus {
+  color: var(--white-color);
+  background-color: var(--btn-bg-hover);
+}
+/* --Карточки работ-- */
+.project-card-title {
+  color: var(--brand-color);
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+
+.card-link {
+  text-decoration: none;
+}
+
+.project-card-text {
+  color: var(--secondary-color);
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.03em;
 }
