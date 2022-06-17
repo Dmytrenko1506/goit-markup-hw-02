@@ -7,7 +7,6 @@
   --white-color: #ffffff;
   --btn-bg-hover: #188ce8;
   --btn-bg-secondary-color: #f5f4fa;
-  --brand-background-color: #e5e5e5;
 }
 body {
   font-family: 'Roboto', sans-serif;
@@ -108,6 +107,9 @@ ul {
 }
 
 /* -- Наша команда -- */
+.team {
+  background-color: var(--btn-bg-secondary-color);
+}
 .team-title {
   font-weight: 700;
   font-size: 36px;
